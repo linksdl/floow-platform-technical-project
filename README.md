@@ -89,10 +89,23 @@ Details of drivers should be stored in a simple flat file. You may store dates i
   - DriverUseCaseTest.java      # Unit test with Junit
   - DriverUseCaseTest2.java     # Unit test with Mockito
 
+### Testing with Swagger2
+- Overview of the Swagger2
+> http:<localhost>:8080/floow/swagger-ui.html
+![image0](images/0-overview.png)
 
-    
-        
-    
+- Create or add one driver
+> POST http://localhost:8080/floow/api/v1/driver
+![image1](images/1-create%20driver-0.png) 
+![image1](images/1-create%20driver-1.png)        
+ 
+- Find all drivers
+> GET http://localhost:8080/floow/api/v1/drivers
+![image2](images/2-find%20all.png)
+
+- Find all drivers by Date (creation date)
+> http://localhost:8080/floow/api/v1/drivers/byDate?date=<Date>
+![image3](images/3-find%20all%20by%20date.png)
 
 
 
