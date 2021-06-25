@@ -9,11 +9,14 @@
 ### Table of Contents
 - 1, Objectives
 - 2, The APIs of Function
-- 3, The structure of project
-- 4, 
+- 3, Develop environment and Technology Stack
+- 4, The structure of project
+- 5, Testing with Swagger2
+- 6, Testing with Postman
+- 7, Install to local and run
 
 
-Objective:
+### Objective:
 > The objective of this challenge is to create a simple REST service that will manage details of drivers for use
 within a hypothetical insurance service. For the purposes of this challenge, a driver record consists of the
 following information:
@@ -25,7 +28,8 @@ following information:
 
 Details of drivers should be stored in a simple flat file. You may store dates in any format you wish.
 
-### The APIs for Driver operations in a SpringBoot
+### The APIs of Function
+> The APIs for Driver operations in a SpringBoot
 
 |Operation|Path| Description|
 |----|----|----|
@@ -34,6 +38,24 @@ Details of drivers should be stored in a simple flat file. You may store dates i
 |GET |/drivers/byDate?date=<date>|A GET endpoint which returns a list of all drivers created after the specified date. Again, the list should be returned in JSON format. Again, the date parameter should use the format YYYY-MM-DD.|
 
 
+### Develop environment and Technology Stack
+#### Development evironment
+- Mac OS
+- IntelliJ IDEA
+- JDK 1.8
+
+#### Technology Stack
+- Java 8
+- Maven 3.6.3
+- Swagger2
+- Postman
+- Springboot 2.5.2
+- Spring Validation
+- Slf4j
+- JSON (fastJson, Jackson)
+- Junit
+- Springboot test
+- Mockito
 
 
 
