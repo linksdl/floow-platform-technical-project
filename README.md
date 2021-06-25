@@ -107,5 +107,17 @@ Details of drivers should be stored in a simple flat file. You may store dates i
 > http://localhost:8080/floow/api/v1/drivers/byDate?date=<Date>
 ![image3](images/3-find%20all%20by%20date.png)
 
+### Testing with Postman
+- Create or add one driver
+> POST http://localhost:8080/floow/api/v1/driver
+![image4](images/postman-0-create%20driver.png)       
+ 
+- Find all drivers
+> GET http://localhost:8080/floow/api/v1/drivers
+![image5](images/postman-1-finall.png)
+
+- Find all drivers by Date (creation date)
+> http://localhost:8080/floow/api/v1/drivers/byDate?date=<Date>
+![image6](images/postman-2-finall%20by%20date.png)
 
 
