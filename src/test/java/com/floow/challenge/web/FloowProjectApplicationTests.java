@@ -1,4 +1,4 @@
-package com.floow.challege.web;
+package com.floow.challenge.web;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
