@@ -7,13 +7,13 @@
 
 
 ### Table of Contents
-- 1, Objectives
-- 2, The APIs of Function
-- 3, Develop environment and Technology Stack
-- 4, The structure of project
-- 5, Testing with Swagger2
-- 6, Testing with Postman
-- 7, Install to local and run
+- **Objectives**
+- **The APIs of Function**
+- **Develop environment and Technology Stack**
+- **The structure of project**
+- **Testing with Swagger2**
+- **Testing with Postman**
+- **Install to local and run**
 
 
 ### Objective:
@@ -57,6 +57,42 @@ Details of drivers should be stored in a simple flat file. You may store dates i
 - Springboot test
 - Mockito
 
+### The structure of project
+/src/main/java/com/floow/challenge/web
+  - /onfig
+     - SwaggerConfig.java # config swagger2 
+  - /controller
+     - DriverController.java # Controller
+  - /domain
+     - Driver.java     # Driver Entity
+  - /exception
+     - BusinessException.java  
+     - ExceptionEnum.java
+     - GlobalExceptionHandler.java
+  - /repository
+     - DatabaseLoader.java  # load data sources from Json file
+     - DriverDao.java       #
+  - /service
+     - IDriverService       # the interface of DriverService
+     - /impl
+        - DriverServiceImpl
+  - /utils
+  - FloowProjectApplication.java
+  
+/src/main/resources
+  - application.yml  # Springboot global config file
+  - driver.json      # the file for storage the driver data
+  
+/src/test/java/com/floow/challenge/web
+  - /service
+     - RegisterDriverCase.java
+  - DriverUseCaseTest.java      # Unit test with Junit
+  - DriverUseCaseTest2.java     # Unit test with Mockito
+
+
+    
+        
+    
 
 
 
