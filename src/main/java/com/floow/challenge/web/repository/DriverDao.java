@@ -20,16 +20,16 @@ public class DriverDao {
     private DatabaseLoader databaseLoader;
     Logger logger = LoggerFactory.getLogger(getClass());
 
-    public void create(Driver driver1) throws Exception {
+    public Driver create(Driver driver) throws Exception {
         try {
             JSONArray arr = databaseLoader.read();
-            JSONArray new_arr = databaseLoader.insert(JSONArray.toJSONString(driver1), arr);
+            JSONArray new_arr = databaseLoader.insert(JSONArray.toJSONString(driver), arr);
             databaseLoader.write(new_arr);
         } catch (IOException e) {
             e.printStackTrace();
             logger.error("IOException: {}", e.getMessage());
         }
-
+        return driver;
     }
 
     /**
