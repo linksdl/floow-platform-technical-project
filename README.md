@@ -1,6 +1,6 @@
 ## Floow platform technical challenge project
 
-**Editor log**
+**==================== Editor log ======================**
 |Date|Author|Description|Version|
 |----|----|----|
 |25/06/2021|Daolin Sheng|Create and implement the project|0.0.1|
