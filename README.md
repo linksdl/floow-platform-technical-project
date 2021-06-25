@@ -18,7 +18,7 @@ Details of drivers should be stored in a simple flat file. You may store dates i
 |----|----|----|
 |POST|/drive  | An POST endpoint to allow new drivers to be created and stored. |
 |GET |/drives | A GET endpoint which returns a list of all existing drivers in JSON format.|
-|GET |/drivers/ByDate?date=<date>|A GET endpoint which returns a list of all drivers created after the specified date. Again, the list should be returned in JSON format. Again, the date parameter should use the format YYYY-MM-DD.|
+|GET |/drivers/byDate?date=<date>|A GET endpoint which returns a list of all drivers created after the specified date. Again, the list should be returned in JSON format. Again, the date parameter should use the format YYYY-MM-DD.|
 
 
 
