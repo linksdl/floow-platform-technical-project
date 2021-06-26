@@ -4,7 +4,7 @@
 |Date|Author|Description|Version|
 |----|----|----|----|
 |25/06/2021|Daolin Sheng|Create and implement the project|0.0.1-SNAPSHOT|
-|26/06/2021|Daolin Sheng|Update some function|0.0.1-SNAPSHOT|
+|26/06/2021|Daolin Sheng|Update and modify some codes|0.0.1-SNAPSHOT|
 
 
 ## Table of Contents
