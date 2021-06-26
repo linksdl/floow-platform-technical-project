@@ -1,4 +1,4 @@
-## Floow platform technical challenge project
+# Floow platform technical challenge project
 
 **=============================== Editor logging ===============================**
 |Date|Author|Description|Version|
@@ -7,7 +7,7 @@
 |26/06/2021|Daolin Sheng|Update some function|0.0.1-SNAPSHOT|
 
 
-### Table of Contents
+## Table of Contents
 * [Project Objective](#objective)
 * [Develop environment and Technology Stack](#stack)
 * [The structure of project](#structure)
@@ -19,7 +19,7 @@
 
 
 
-### Project Objective <a name="objective"></a>
+## Project Objective <a name="objective"></a>
 > The objective of this challenge is to create a simple REST service that will manage details of drivers for use
 within a hypothetical insurance service. For the purposes of this challenge, a driver record consists of the
 following information:
@@ -31,13 +31,13 @@ following information:
 
 Details of drivers should be stored in a simple flat file. You may store dates in any format you wish.
 
-### Develop environment and Technology Stack <a name="statck"></a>
-#### Development evironment
+## Develop environment and Technology Stack <a name="statck"></a>
+### Development evironment
 - Mac OS
 - IntelliJ IDEA
 - JDK 1.8
 
-#### Technology Stack
+### Technology Stack
 - Java 8
 - Maven 3.6.3
 - Swagger2
@@ -51,7 +51,7 @@ Details of drivers should be stored in a simple flat file. You may store dates i
 - Springboot test
 - Mockito
 
-### The structure of project <a name="structure"></a>
+## The structure of project <a name="structure"></a>
 /src/main/java/com/floow/challenge/web
   - /config
      - SwaggerConfig.java # config swagger2 
@@ -83,21 +83,21 @@ Details of drivers should be stored in a simple flat file. You may store dates i
   - DriverUseCaseTest.java      # Unit test with Junit
   - DriverUseCaseTest2.java     # Unit test with Mockito
 
-### How to install and run this Project? <a name="install"></a>
+## How to install and run this Project? <a name="install"></a>
 If you want to run this project, there are two method can be use. However, firstly, you cloud clone this project to your local workspace.    
 `
 git clone https://github.com/linksdl/floow-platform-technical-project.git
 `
-#### Method 1: running the jar package on your local server.
+### Method 1: running the jar package on your local server.
 - change to the `bin` directory:   `cd /floow-platform-technical-project/bin`
 - then run `java -jar floow-project-0.0.1-SNAPSHOT.jar`
 - **The run result on the server shown in the picture.**
 ![image](images/run%20on%20local.png)
 
-#### Method 2: running the project on your IDEA.
+### Method 2: running the project on your IDEA.
 ![image](images/run%20on%20Application.png)
 
-### The REST APIs <a name="function"></a>
+## The REST APIs <a name="function"></a>
 > The APIs for Driver operations in a SpringBoot, and the root path: `http://<ip>:<port>/floow/api/v1`.
 > If you run on local, the root path is: `http://localhost:8080/floow/api/vi` 
 
@@ -107,7 +107,7 @@ git clone https://github.com/linksdl/floow-platform-technical-project.git
 |GET |/drives | A GET endpoint which returns a list of all existing drivers in JSON format.|
 |GET |/drivers/byDate?date=<date>|A GET endpoint which returns a list of all drivers created after the specified date. Again, the list should be returned in JSON format. Again, the date parameter should use the format YYYY-MM-DD.|
 
-### Testing with Swagger2 <a name="swagger"></a>
+## Testing with Swagger2 <a name="swagger"></a>
 - [Overview of the Swagger2](http://localhost:8080/floow/swagger-ui.html)(http://localhost:8080/floow/swagger-ui.html)
 ![image0](images/0-overview.png)
 
@@ -124,7 +124,7 @@ git clone https://github.com/linksdl/floow-platform-technical-project.git
 > http://localhost:8080/floow/api/v1/drivers/byDate?date=<Date>
 ![image3](images/3-find%20all%20by%20date.png)
 
-### Testing with Postman <a name="postman"></a>
+## Testing with Postman <a name="postman"></a>
 - Create or add one driver
 > POST http://localhost:8080/floow/api/v1/driver
 ![image4](images/postman-0-create%20driver.png)       
@@ -137,6 +137,6 @@ git clone https://github.com/linksdl/floow-platform-technical-project.git
 > http://localhost:8080/floow/api/v1/drivers/byDate?date=<Date>
 ![image6](images/postman-2-finall%20by%20date.png)
 
-### Conclusion <a name="conclusion"></a>
+## Conclusion <a name="conclusion"></a>
 - Objective of this project is not complicate, but some code needs improvement.
 - In the next stage, I need to be continuously optimized.
