@@ -43,6 +43,7 @@ Details of drivers should be stored in a simple flat file. You may store dates i
 - Postman
 - Springboot 2.5.2
 - Spring Validation
+- JPA
 - Slf4j
 - JSON (fastJson, Jackson)
 - Junit
@@ -51,7 +52,7 @@ Details of drivers should be stored in a simple flat file. You may store dates i
 
 ### The structure of project <a name="structure"></a>
 /src/main/java/com/floow/challenge/web
-  - /onfig
+  - /config
      - SwaggerConfig.java # config swagger2 
   - /controller
      - DriverController.java # Controller
@@ -82,7 +83,7 @@ Details of drivers should be stored in a simple flat file. You may store dates i
   - DriverUseCaseTest2.java     # Unit test with Mockito
 
 ### How to install and run this Project? <a name="install"></a>
-If you want to run this project, there are two method can be use. However, firstly, you cloud clone this project to your local workspace.
+If you want to run this project, there are two method can be use. However, firstly, you cloud clone this project to your local workspace. \n
 `
 git clone https://github.com/linksdl/floow-platform-technical-project.git
 `
