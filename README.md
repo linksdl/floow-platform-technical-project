@@ -15,6 +15,7 @@
 * [The REST APIs](#function)
 * [Testing with Swagger2](#swagger)
 * [Testing with Postman](#postman)
+* [Conclusion](#conclusion)
 
 
 
@@ -107,7 +108,7 @@ git clone https://github.com/linksdl/floow-platform-technical-project.git
 |GET |/drivers/byDate?date=<date>|A GET endpoint which returns a list of all drivers created after the specified date. Again, the list should be returned in JSON format. Again, the date parameter should use the format YYYY-MM-DD.|
 
 ### Testing with Swagger2 <a name="swagger"></a>
-- [Overview of the Swagger2](http://<localhost>:8080/floow/swagger-ui.html)(http//<localhost>:8080/floow/swagger-ui.html)
+- [Overview of the Swagger2](http://localhost:8080/floow/swagger-ui.html)(http://localhost:8080/floow/swagger-ui.html)
 ![image0](images/0-overview.png)
 
 - Create or add one driver
@@ -136,3 +137,6 @@ git clone https://github.com/linksdl/floow-platform-technical-project.git
 > http://localhost:8080/floow/api/v1/drivers/byDate?date=<Date>
 ![image6](images/postman-2-finall%20by%20date.png)
 
+### Conclusion <a name="conclusion"></a>
+- Objective of this project is not complicate, but some code needs improvement.
+- In the next stage, I need to be continuously optimized.
