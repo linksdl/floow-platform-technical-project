@@ -107,7 +107,7 @@ git clone https://github.com/linksdl/floow-platform-technical-project.git
 |GET |/drivers/byDate?date=<date>|A GET endpoint which returns a list of all drivers created after the specified date. Again, the list should be returned in JSON format. Again, the date parameter should use the format YYYY-MM-DD.|
 
 ### Testing with Swagger2 <a name="swagger"></a>
-- [Overview of the Swagger2](http:<localhost>:8080/floow/swagger-ui.html):http:<localhost>:8080/floow/swagger-ui.html
+- [Overview of the Swagger2](http://<localhost>:8080/floow/swagger-ui.html)(http//<localhost>:8080/floow/swagger-ui.html)
 ![image0](images/0-overview.png)
 
 - Create or add one driver
