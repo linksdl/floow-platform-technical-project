@@ -11,7 +11,7 @@
 * [Project Objective](#objective)
 * [Develop environment and Technology Stack](#stack)
 * [The structure of project](#structure)
-* [How to install and run this Project?](#install)
+* [How to install and runn this project?](#install)
 * [The REST APIs](#function)
 * [Testing with Swagger2](#swagger)
 * [Testing with Postman](#postman)
@@ -83,7 +83,7 @@ Details of drivers should be stored in a simple flat file. You may store dates i
   - DriverUseCaseTest.java      # Unit test with Junit
   - DriverUseCaseTest2.java     # Unit test with Mockito
 
-## How to install and run this Project? <a name="install"></a>
+## How to install and run this project? <a name="install"></a>
 If you want to run this project, there are two method can be use. However, firstly, you cloud clone this project to your local workspace.    
 `
 git clone https://github.com/linksdl/floow-platform-technical-project.git
