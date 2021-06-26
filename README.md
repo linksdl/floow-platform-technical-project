@@ -34,7 +34,7 @@ Details of drivers should be stored in a simple flat file. You may store dates i
 - Step1: run `git clone https://github.com/linksdl/floow-platform-technical-project.git`
 - Step2: run `cd .../loow-platform-technical-project/bin`
 - Step3: run  `java -jar floow-project-0.0.1-SNAPSHOT.jar`
-**the run result on local**
+- **the run result on local**
 ![image](images/run%20on%20local.png)
 
 
