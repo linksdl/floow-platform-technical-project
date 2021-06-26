@@ -83,7 +83,7 @@ Details of drivers should be stored in a simple flat file. You may store dates i
   - DriverUseCaseTest2.java     # Unit test with Mockito
 
 ### How to install and run this Project? <a name="install"></a>
-If you want to run this project, there are two method can be use. However, firstly, you cloud clone this project to your local workspace. \n
+If you want to run this project, there are two method can be use. However, firstly, you cloud clone this project to your local workspace.    
 `
 git clone https://github.com/linksdl/floow-platform-technical-project.git
 `
@@ -99,6 +99,7 @@ git clone https://github.com/linksdl/floow-platform-technical-project.git
 ### The REST APIs <a name="function"></a>
 > The APIs for Driver operations in a SpringBoot, and the root path: `http://<ip>:<port>/floow/api/v1`.
 > If you run on local, the root path is: `http://localhost:8080/floow/api/vi` 
+
 |Operation|Path| Description|
 |----|----|----|
 |POST|/drive  | An POST endpoint to allow new drivers to be created and stored. |
