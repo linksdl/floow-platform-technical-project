@@ -88,16 +88,16 @@ If you want to run this project, there are two method can be use. However, first
 `
 git clone https://github.com/linksdl/floow-platform-technical-project.git
 `
-### Method 1: running the jar package on your local server.
+#### Method 1: running the jar package on your local server.
 - change to the `bin` directory:   `cd /floow-platform-technical-project/bin`
 - then run `java -jar floow-project-0.0.1-SNAPSHOT.jar`
 - **The run result on the server shown in the picture.**
 ![image](images/run%20on%20local.png)
 
-### Method 2: running the project on your IDEA.
+#### Method 2: running the project on your IDEA.
 ![image](images/run%20on%20Application.png)
 
-### Method 3: using Maven to install and package this project. The reference [blog](https://www.baeldung.com/executable-jar-with-maven)(https://www.baeldung.com/executable-jar-with-maven)
+#### Method 3: using Maven to install and package this project. The reference [blog](https://www.baeldung.com/executable-jar-with-maven)(https://www.baeldung.com/executable-jar-with-maven)
 
 ## The REST APIs <a name="function"></a>
 > The APIs for Driver operations in a SpringBoot, and the root path: `http://<ip>:<port>/floow/api/v1`.
