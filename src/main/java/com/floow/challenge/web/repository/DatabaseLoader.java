@@ -4,9 +4,12 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
-import org.springframework.stereotype.Component;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
+import org.springframework.stereotype.Component;
 
 import java.io.*;
 import java.util.Iterator;
@@ -15,7 +18,10 @@ import java.util.Iterator;
 @Component
 public class DatabaseLoader {
 
-    @Value("classpath:/driver.json")
+
+    Logger logger = LoggerFactory.getLogger(getClass());
+
+    @Value("classpath:static/driver.json")
     private Resource driverDB;
 
 
@@ -25,12 +31,17 @@ public class DatabaseLoader {
      * @throws Exception
      */
     public JSONArray read() throws  Exception{
+        ClassPathResource pathResource = new ClassPathResource("static/driver.json");
+        if(!pathResource.exists()){
+            logger.warn("driver.json file does not exist.");
+        }
         BufferedReader reader = null;
         JSONArray arr = new JSONArray();
         try{
-            File file = driverDB.getFile();
-            FileInputStream resource = new FileInputStream(file);
-            reader = new BufferedReader(new InputStreamReader(resource));
+//            File file = pathResource.getFile();
+//            FileInputStream resource = new FileInputStream(file);
+//            reader = new BufferedReader(new InputStreamReader(resource));
+          reader = new BufferedReader(new InputStreamReader(pathResource.getInputStream()));
             StringBuilder builder = new StringBuilder();
             String line = "";
             while((line = reader.readLine())!=null) {
@@ -84,10 +95,14 @@ public class DatabaseLoader {
      */
     public void write(JSONArray array) throws Exception{
         BufferedWriter writer = null;
+        ClassPathResource pathResource = new ClassPathResource("static/driver.json");
+        if(!pathResource.exists()){
+            logger.warn("driver.json file does not exist.");
+        }
         try {
             String s= JSON.toJSONString(array, SerializerFeature.PrettyFormat, SerializerFeature.WriteMapNullValue,
                     SerializerFeature.WriteDateUseDateFormat);
-            File file = driverDB.getFile();
+            File file = pathResource.getFile();
             FileOutputStream resource = new FileOutputStream(file, false);
             writer = new BufferedWriter(new OutputStreamWriter(resource));
             writer.write(s);

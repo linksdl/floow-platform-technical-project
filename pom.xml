@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.floow.challege</groupId>
-    <artifactId>demo</artifactId>
+    <artifactId>floow-project</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>floow-project</name>
     <description>floow platform techical challenge project for Spring Boot</description>
@@ -95,14 +95,36 @@
             <version>1.7.31</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.6</version>
+        </dependency>
 
     </dependencies>
 
     <build>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-install-plugin</artifactId>
+                <version>2.5.2</version>
+            </plugin>
+
+            <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.floow.challenge.web.FloowProjectApplication</mainClass>
+                </configuration>
+                <executions>
+                  <execution>
+                    <goals>
+                      <goal>repackage</goal>
+                    </goals>
+                  </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
