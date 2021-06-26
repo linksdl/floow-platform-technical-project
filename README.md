@@ -1,23 +1,24 @@
 ## Floow platform technical challenge project
 
-**============================ Editor log ============================**
+**=============================== Editor logging ===============================**
 |Date|Author|Description|Version|
 |----|----|----|----|
-|25/06/2021|Daolin Sheng|Create and implement the project|0.0.1|
+|25/06/2021|Daolin Sheng|Create and implement the project|0.0.1-SNAPSHOT|
+|26/06/2021|Daolin Sheng|Update some function|0.0.1-SNAPSHOT|
 
 
 ### Table of Contents
-* [Objectives](#objective)
-* [Install and run on local](#install)
-* [The APIs of Function](#function)
+* [Project Objective](#objective)
 * [Develop environment and Technology Stack](#stack)
 * [The structure of project](#structure)
+* [How to install and run this Project?](#install)
+* [The REST APIs](#function)
 * [Testing with Swagger2](#swagger)
 * [Testing with Postman](#postman)
 
 
 
-### Objective <a name="objective"></a>
+### Project Objective <a name="objective"></a>
 > The objective of this challenge is to create a simple REST service that will manage details of drivers for use
 within a hypothetical insurance service. For the purposes of this challenge, a driver record consists of the
 following information:
@@ -28,25 +29,6 @@ following information:
 - Creation Date
 
 Details of drivers should be stored in a simple flat file. You may store dates in any format you wish.
-
-### Install and run on local <a name="install"></a>
-
-- Step1: run `git clone https://github.com/linksdl/floow-platform-technical-project.git`
-- Step2: run `cd .../loow-platform-technical-project/bin`
-- Step3: run  `java -jar floow-project-0.0.1-SNAPSHOT.jar`
-- **the run result on local**
-![image](images/run%20on%20local.png)
-
-
-### The APIs of Function <a name="function"></a>
-> The APIs for Driver operations in a SpringBoot
-
-|Operation|Path| Description|
-|----|----|----|
-|POST|/drive  | An POST endpoint to allow new drivers to be created and stored. |
-|GET |/drives | A GET endpoint which returns a list of all existing drivers in JSON format.|
-|GET |/drivers/byDate?date=<date>|A GET endpoint which returns a list of all drivers created after the specified date. Again, the list should be returned in JSON format. Again, the date parameter should use the format YYYY-MM-DD.|
-
 
 ### Develop environment and Technology Stack <a name="statck"></a>
 #### Development evironment
@@ -99,6 +81,29 @@ Details of drivers should be stored in a simple flat file. You may store dates i
   - DriverUseCaseTest.java      # Unit test with Junit
   - DriverUseCaseTest2.java     # Unit test with Mockito
 
+### How to install and run this Project? <a name="install"></a>
+If you want to run this project, there are two method can be use. However, firstly, you cloud clone this project to your local workspace.
+`
+git clone https://github.com/linksdl/floow-platform-technical-project.git
+`
+#### Method 1: running the jar package on your local server.
+- change to the `bin` directory:   `cd /floow-platform-technical-project/bin`
+- then run `java -jar floow-project-0.0.1-SNAPSHOT.jar`
+- **The run result on the server shown in the picture.**
+![image](images/run%20on%20local.png)
+
+#### Method 2: running the project on your IDEA.
+![image](images/run%20on%20Application.png)
+
+### The REST APIs <a name="function"></a>
+> The APIs for Driver operations in a SpringBoot, and the root path: `http://<ip>:<port>/floow/api/v1`.
+> If you run on local, the root path is: `http://localhost:8080/floow/api/vi` 
+|Operation|Path| Description|
+|----|----|----|
+|POST|/drive  | An POST endpoint to allow new drivers to be created and stored. |
+|GET |/drives | A GET endpoint which returns a list of all existing drivers in JSON format.|
+|GET |/drivers/byDate?date=<date>|A GET endpoint which returns a list of all drivers created after the specified date. Again, the list should be returned in JSON format. Again, the date parameter should use the format YYYY-MM-DD.|
+
 ### Testing with Swagger2 <a name="swagger"></a>
 - Overview of the Swagger2
 > http:<localhost>:8080/floow/swagger-ui.html
@@ -129,5 +134,4 @@ Details of drivers should be stored in a simple flat file. You may store dates i
 - Find all drivers by Date (creation date)
 > http://localhost:8080/floow/api/v1/drivers/byDate?date=<Date>
 ![image6](images/postman-2-finall%20by%20date.png)
-
 
