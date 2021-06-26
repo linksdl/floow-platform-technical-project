@@ -7,17 +7,17 @@
 
 
 ### Table of Contents
-- **Objectives**
-- **Install and run on local**
-- **The APIs of Function**
-- **Develop environment and Technology Stack**
-- **The structure of project**
-- **Testing with Swagger2**
-- **Testing with Postman**
+* [Objectives](#objective)
+* [Install and run on local](#)
+* [The APIs of Function](#)
+* [Develop environment and Technology Stack](#)
+* [The structure of project](#)
+* [Testing with Swagger2](#)
+* [Testing with Postman](#)
 
 
 
-### Objective:
+### Objective <a name="objective"></a>
 > The objective of this challenge is to create a simple REST service that will manage details of drivers for use
 within a hypothetical insurance service. For the purposes of this challenge, a driver record consists of the
 following information:
