@@ -97,6 +97,8 @@ git clone https://github.com/linksdl/floow-platform-technical-project.git
 ### Method 2: running the project on your IDEA.
 ![image](images/run%20on%20Application.png)
 
+### Method 3: using Maven to install and package this project. The reference [blog](https://www.baeldung.com/executable-jar-with-maven)(https://www.baeldung.com/executable-jar-with-maven)
+
 ## The REST APIs <a name="function"></a>
 > The APIs for Driver operations in a SpringBoot, and the root path: `http://<ip>:<port>/floow/api/v1`.
 > If you run on local, the root path is: `http://localhost:8080/floow/api/vi` 
