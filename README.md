@@ -11,7 +11,7 @@
 * [Project Objective](#objective)
 * [Develop environment and Technology Stack](#stack)
 * [The structure of project](#structure)
-* [How to install and runn this project?](#install)
+* [How to install and run this project?](#install)
 * [The REST APIs](#function)
 * [Testing with Swagger2](#swagger)
 * [Testing with Postman](#postman)
@@ -143,3 +143,4 @@ git clone https://github.com/linksdl/floow-platform-technical-project.git
 ## Conclusion <a name="conclusion"></a>
 - Objective of this project is not complicate, but some code needs improvement.
 - In the next stage, I need to be continuously optimized.
+- An existing bug I need to repair in next days.
