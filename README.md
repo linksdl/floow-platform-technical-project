@@ -143,7 +143,7 @@ git clone https://github.com/linksdl/floow-platform-technical-project.git
 
 
 **The result shown:**
-![image7](images/json file.png)
+![image](images/json file.png)
 
 
 ## Conclusion <a name="conclusion"></a>
