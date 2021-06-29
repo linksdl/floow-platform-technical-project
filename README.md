@@ -76,7 +76,8 @@ Details of drivers should be stored in a simple flat file. You may store dates i
   
 /src/main/resources
   - application.yml  # Springboot global config file
-  - driver.json      # the file for storage the driver data
+  /static
+     - driver.json      # the file for storage the driver data
   
 /src/test/java/com/floow/challenge/web
   - /service
@@ -139,6 +140,11 @@ git clone https://github.com/linksdl/floow-platform-technical-project.git
 - Find all drivers by Date (creation date)
 > http://localhost:8080/floow/api/v1/drivers/byDate?date=<Date>
 ![image6](images/postman-2-finall%20by%20date.png)
+
+
+**The result shown:**
+![image7](images/json.png)
+
 
 ## Conclusion <a name="conclusion"></a>
 - Objective of this project is not complicate, but some code needs improvement.
