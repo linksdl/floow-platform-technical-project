@@ -38,9 +38,6 @@ public class DatabaseLoader {
         BufferedReader reader = null;
         JSONArray arr = new JSONArray();
         try{
-//            File file = pathResource.getFile();
-//            FileInputStream resource = new FileInputStream(file);
-//            reader = new BufferedReader(new InputStreamReader(resource));
           reader = new BufferedReader(new InputStreamReader(pathResource.getInputStream()));
             StringBuilder builder = new StringBuilder();
             String line = "";

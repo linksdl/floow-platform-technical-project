@@ -60,7 +60,7 @@ public class DriverServiceImpl implements IDriverService {
     /**
      * get all driver records
      *
-     * @return
+     * @return List<Drive>
      */
     @Override
     public List<Driver> findAll() {
@@ -79,7 +79,7 @@ public class DriverServiceImpl implements IDriverService {
      * get all drivers' record after a create date
      *
      * @param createDate
-     * @return
+     * @return List<Driver>
      */
     @Override
     public List<Driver> findAllByDate(String createDate) {
